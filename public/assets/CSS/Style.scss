@@ -1,0 +1,105 @@
+$blue: #0F52BA; 
+$white: #f2f2f2;
+$grey: #b6b6b6; 
+$whiten: #ffffffc4;
+
+@mixin alingAndDisplay ($display) {
+    display: $display;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    
+}
+
+@mixin radiosP () {
+    border-radius: 8px; 
+}
+
+
+
+header {
+    background-color: $blue;
+    color: $whiten;
+    width: 100%;
+    height: 10vh;
+    min-height: 101px;
+    display:flex;
+    padding: 20px;
+    align-items: baseline;
+    font-size: 20px;
+    
+    .logo{
+        color: $white;
+        font-size: 40px;
+        padding-right: 5px;
+    }
+    button{
+        position:absolute;
+        display:flex;
+        width: 90px;
+        height: 45px;
+        right: 50px;
+        background-color: $white;
+        border: 0;
+        @include radiosP();
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        img{
+            width: 19.1px;
+            height: 18px;
+        }
+    }
+}
+
+section{
+    background-color: #ffffffd4;
+    @include alingAndDisplay(flex);
+    width: 100%;
+    height: 90vh;
+    padding: 5vh 0px 5vh 0px;
+    
+    
+}
+
+.shimmer-effect {
+    @include radiosP();
+    width: 931px;
+    height: 100%; /* Defina a altura do shimmer */
+    overflow: hidden;
+    position: relative;
+    background-color: $grey;
+}
+
+.shimmer-line {
+    display: flex;
+    position: relative;
+    left: -40%;
+    background: linear-gradient(90deg,#ffffff00 0%, #ffffff42 60%, #63819f00 100%); /* Gradiente diagonal da esquerda para a direita */
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    
+}
+.shimmer-line:nth-child(1) {
+    animation: shimmer 3s infinite linear; /* Defina a duração e a repetição da animação */
+}
+
+.shimmer-line:nth-child(2) {
+    animation: shimmer 3s infinite linear 0.5s ; /* Defina um atraso para cada linha */
+}
+
+.shimmer-line:nth-child(3) {
+    animation: shimmer 3s infinite linear 1s; /* Defina um atraso para cada linha */
+}
+
+
+
+@keyframes shimmer {
+0% {
+    transform: translateX(-500%);
+}
+100% {
+    transform: translateX(500%);
+}
+}

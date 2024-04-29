@@ -1,25 +1,97 @@
+@charset "UTF-8";
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+  background-color: #0F52BA;
+  color: rgba(255, 255, 255, 0.768627451);
+  width: 100%;
+  height: 10vh;
+  min-height: 101px;
+  display: flex;
+  padding: 20px;
+  align-items: baseline;
+  font-size: 20px;
+}
+header .logo {
+  color: #f2f2f2;
+  font-size: 40px;
+  padding-right: 5px;
+}
+header button {
+  position: absolute;
+  display: flex;
+  width: 90px;
+  height: 45px;
+  right: 50px;
+  background-color: #f2f2f2;
+  border: 0;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+header button img {
+  width: 19.1px;
+  height: 18px;
 }
 
-header h1 {
-    margin: 0;
+section {
+  background-color: rgba(255, 255, 255, 0.831372549);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+  padding: 5vh 0px 5vh 0px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.shimmer-effect {
+  border-radius: 8px;
+  width: 931px;
+  height: 100%; /* Defina a altura do shimmer */
+  overflow: hidden;
+  position: relative;
+  background-color: #b6b6b6;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+.shimmer-line {
+  display: flex;
+  position: relative;
+  left: -40%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2588235294) 60%, rgba(99, 129, 159, 0) 100%); /* Gradiente diagonal da esquerda para a direita */
+  position: absolute;
+  width: 40%;
+  height: 100%;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.shimmer-line:nth-child(1) {
+  -webkit-animation: shimmer 3s infinite linear;
+          animation: shimmer 3s infinite linear; /* Defina a duração e a repetição da animação */
 }
+
+.shimmer-line:nth-child(2) {
+  -webkit-animation: shimmer 3s infinite linear 0.5s;
+          animation: shimmer 3s infinite linear 0.5s; /* Defina um atraso para cada linha */
+}
+
+.shimmer-line:nth-child(3) {
+  -webkit-animation: shimmer 3s infinite linear 1s;
+          animation: shimmer 3s infinite linear 1s; /* Defina um atraso para cada linha */
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+    transform: translateX(-500%);
+  }
+  100% {
+    transform: translateX(500%);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-500%);
+  }
+  100% {
+    transform: translateX(500%);
+  }
+}/*# sourceMappingURL=Style.css.map */
