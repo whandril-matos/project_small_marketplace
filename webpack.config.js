@@ -3,7 +3,10 @@ const path = require('path');
 module.exports = {
   mode: 'production',
   entry: {
-    index: ['./src/index.ts']
+    index: ['./src/index.ts'],
+    callApi: ['./src/callApi.ts'],
+    insectPro: ['./src/insectPro.ts'],
+    offLoading: ['./src/offLoading.ts']
   },
   module: {
     rules: [
