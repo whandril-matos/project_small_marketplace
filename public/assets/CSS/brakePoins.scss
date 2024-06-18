@@ -1,0 +1,18 @@
+@media(max-width:900px){
+    .takeProduct{
+       width: 500px ;
+    }
+    .loadingTable{
+        width: 500px; 
+    }
+}
+@media(max-width:450px){
+    .takeProduct{
+       width: 250px ;
+    }
+    .shape{
+        width: 100%;
+        min-width: 190;
+        height: 280px;
+    }
+}

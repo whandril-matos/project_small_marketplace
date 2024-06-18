@@ -1,0 +1,79 @@
+$blue: #0F52BA;
+
+
+.rootC{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.shape{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+    max-width: 217px;
+    width: 100%;
+    min-width: 190;
+    height: 280px;
+    background-color: white;
+    margin:12px 0px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.842);
+    overflow: hidden;
+}
+.shape div{
+    padding-top: 3px;
+    margin-left: 11px;
+    margin-right: 7px;
+}
+
+.imgDiv{
+    background-color: white;
+    height: 45%;
+}
+
+.img{
+    position: relative;
+    height: 100%;
+    left: 20%;
+}
+
+.nameT{
+    text-align: left;
+}
+
+.price{
+    display: flex;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(212, 212, 212);
+    position:relative;
+}
+
+.aboutProduct{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    font-size: 13px;
+    background-color: white;
+    height: 20%;
+}
+
+.buttomCard{
+    position: relative;
+    border: solid 0px;
+    padding: 10px;
+    margin:0;
+    bottom: -1px;
+    background-color: $blue;
+    color: white;
+    border-radius: 0px 0px 20px 20px;
+}
+
