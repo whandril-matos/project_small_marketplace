@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 header {
   background-color: #0F52BA;
   color: rgba(255, 255, 255, 0.768627451);
@@ -70,6 +74,27 @@ header button img {
   height: 100%;
   position: relative;
   background-color: rgb(255, 255, 255);
+}
+
+.shoppingCard {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 30%;
+  min-width: 400px;
+  background-color: brown;
+}
+
+.recard {
+  display: flex;
+  background-color: #0F52BA;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .shimmer-line {

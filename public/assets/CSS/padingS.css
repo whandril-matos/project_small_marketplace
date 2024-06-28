@@ -1,0 +1,125 @@
+@charset "UTF-8";
+.shapeCard {
+  background-color: white;
+  width: 90%;
+  height: 10%;
+  flex-direction: row;
+  display: flex;
+  margin: 10px;
+  padding: 7px;
+}
+
+.imgScope {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 25%;
+  background-color: rgb(128, 113, 0);
+}
+
+.buttomBox {
+  display: flex;
+  width: 25%;
+  background-color: green;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgToCard {
+  height: 100%;
+}
+
+.aboutProductC {
+  width: 50%;
+  background-color: blue;
+}
+
+.buttomClose {
+  width: 100%;
+  height: 100%;
+}
+
+.buttomClose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttomClose:hover {
+  background-color: #f8f8f8;
+}
+
+/* Estilo do ícone da lixeira */
+.trash-bin {
+  position: relative;
+  width: 24px;
+  height: 30px;
+}
+
+.trash-bin .lid {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 29px;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px 2px 0 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.trash-bin .body {
+  position: absolute;
+  top: 4px;
+  width: 24px;
+  height: 28px;
+  background-color: #555;
+  border-radius: 0 0 4px 4px;
+  align-items: center;
+}
+
+.trash-bin .TakeLocal {
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  border-radius: 20% 20% 0 0;
+  background-color: #333;
+  left: 32%;
+  top: -60%;
+}
+
+.trash-bin .line {
+  position: absolute;
+  width: 2px;
+  height: 60%;
+  background-color: #333;
+  left: 20%;
+}
+
+.trash-bin .line:nth-child(1) {
+  left: 15%;
+  top: 10%;
+}
+
+.trash-bin .line:nth-child(2) {
+  left: 45%;
+  top: 10%;
+}
+
+.trash-bin .line:nth-child(3) {
+  left: 75%;
+  top: 10%;
+}/*# sourceMappingURL=padingS.css.map */
